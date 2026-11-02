@@ -1,0 +1,32 @@
+[package]
+name = "mrly-sequences"
+version = "0.2.0"
+edition = "2024"
+license = "MIT"
+repository = "https://github.com/mrlyprod/sequences"
+homepage = "https://mrly.net"
+rust-version = "1.96"
+keywords = ["mathematics", "fractal", "cellular-automata", "generative"]
+categories = ["mathematics", "science", "multimedia::images"]
+description = "The sequence rows: a design sequence's address, its measure and axis, its terms and its status."
+readme = "README.md"
+include = ["src/**", "README.md", "LICENSE"]
+publish = false
+
+[lints.rust]
+missing_docs = "deny"
+unsafe_code = "forbid"
+unreachable_pub = "warn"
+
+[dependencies]
+mrly-core = "0.2.0"
+mrly-math = "0.2.0"
+
+[profile.release]
+lto = true
+codegen-units = 1
+
+[profile.test]
+opt-level = 1
+
+[workspace]
