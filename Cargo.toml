@@ -14,7 +14,6 @@ include = ["src/**", "README.md", "LICENSE"]
 publish = false
 
 [lints.rust]
-missing_docs = "deny"
 unsafe_code = "forbid"
 unreachable_pub = "warn"
 
@@ -25,8 +24,5 @@ mrly-math = "0.2.0"
 [profile.release]
 lto = true
 codegen-units = 1
-
-[profile.test]
-opt-level = 1
 
 [workspace]

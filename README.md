@@ -1,16 +1,15 @@
-mrly-sequences; a MrlyMath crate: the sequence rows, a design sequence's address, its measure and axis, its terms and its status
+# Think differently
 
-# SEQUENCES
+## Here's to the crazy ones.
 
-- Rust only for now; no bindings sit beside it yet.
-- Builds on `mrly-core` and `mrly-math`, by version.
-- `scripts/check.sh` is the one gate: fmt, clippy, test, doc, leak.
-- Until the crates are published, clone the fleet beside this repo: a `.cargo/config.toml` with `[patch.crates-io]` rows points every `mrly-*` dependency at its sibling folder.
+1. The misfits
+2. The rebels
+3. The troublemakers
 
-```rust
-use mrly_sequences::{Axis, Cost, Key, Measure};
+The round pegs in the square holes. The ones who see things differently. They're not fond of rules. And they have no respect for the status quo. You can quote them, disagree with them, glorify or vilify them. About the only thing you can't do is ignore them. Because they change things.
 
-let carpet = Key::new(7, 2, 2, Measure::Fills, Axis::Side);
-assert_eq!(carpet.number(), 3);
-assert_eq!(carpet.measure.cost(carpet.axis), Cost::Closed);
-```
+***They push the human race forward***.
+
+And while some may see them as the crazy ones, we see genius. Because the people who are crazy enough to think they can change the world, are the ones who do.
+
+[Think differently]: https://mrly.net
